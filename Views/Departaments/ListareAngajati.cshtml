@@ -1,0 +1,48 @@
+﻿
+@model CTPapuci.Models.Departament
+
+@{
+    ViewData["Title"] = "AngajatiDepartament";
+}
+
+<h1></h1>
+<h1>Angajați in departamentul de @Model.Nume</h1>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Angajati.FirstOrDefault().Marca)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Angajati.FirstOrDefault().Nume)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Angajati.FirstOrDefault().Salariu)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Angajati.FirstOrDefault().Functie)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model.Angajati) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Marca)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Nume)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Salariu)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Functie.Nume)
+            </td>
+
+        </tr>
+}
+    </tbody>
+</table>

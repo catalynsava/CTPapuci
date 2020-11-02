@@ -1,0 +1,47 @@
+﻿@model IEnumerable<CTPapuci.Models.Magazin>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Magazine</h1>
+
+<p>
+    <a asp-action="Create">Creează un magazin nou</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Cod)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Nume)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Locatie)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Cod)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Nume)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Locatie)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.Id">Editare</a> |
+                <a asp-action="Details" asp-route-id="@item.Id">Detalii</a> |
+                <a asp-action="Delete" asp-route-id="@item.Id">Ștergere</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

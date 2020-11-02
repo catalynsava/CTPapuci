@@ -1,0 +1,54 @@
+﻿@model IEnumerable<CTPapuci.Models.Departament>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Departament</h1>
+
+<p>
+    <a asp-action="Create">Creează un departament nou</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Cod)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Nume)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Magazin)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Magazin.Locatie)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Cod)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Nume)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Magazin.Nume)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Magazin.Locatie)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.Id">Editare</a> |
+                <a asp-action="Details" asp-route-id="@item.Id">Detalii</a> |
+                <a asp-action="Delete" asp-route-id="@item.Id">Ștergere</a> |
+                <a asp-action="ListareAngajati" asp-route-id="@item.Id">Angajați</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

@@ -1,0 +1,33 @@
+﻿@model CTPapuci.Models.Functie
+
+@{
+    ViewData["Title"] = "Delete";
+}
+
+<h1>Ștergere</h1>
+
+<h3>Sunteți sigur?</h3>
+<div>
+    <h4>Functie</h4>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Nume)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Nume)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Descriere)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Descriere)
+        </dd>
+    </dl>
+    
+    <form asp-action="Delete">
+        <input type="hidden" asp-for="Id" />
+        <input type="submit" value="Ștergere" class="btn btn-danger" /> |
+        <a asp-action="Index">Înapoi</a>
+    </form>
+</div>
