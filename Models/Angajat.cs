@@ -24,8 +24,8 @@ namespace CTPapuci.Models
 
         //Legatura cu Departament
         public long IdDepartament { get; set; }
+        
         [ForeignKey("IdDepartament")]
-
         public Departament Departament { get; set; }
 
     }

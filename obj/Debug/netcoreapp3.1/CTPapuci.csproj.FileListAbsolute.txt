@@ -1,6 +1,5 @@
 C:\!ASP\CTPapuci\bin\Debug\netcoreapp3.1\appsettings.Development.json
 C:\!ASP\CTPapuci\bin\Debug\netcoreapp3.1\appsettings.json
-C:\!ASP\CTPapuci\bin\Debug\netcoreapp3.1\Properties\launchSettings.json
 C:\!ASP\CTPapuci\bin\Debug\netcoreapp3.1\CTPapuci.exe
 C:\!ASP\CTPapuci\bin\Debug\netcoreapp3.1\CTPapuci.deps.json
 C:\!ASP\CTPapuci\bin\Debug\netcoreapp3.1\CTPapuci.runtimeconfig.json
@@ -202,3 +201,4 @@ C:\!ASP\CTPapuci\obj\Debug\netcoreapp3.1\staticwebassets\CTPapuci.StaticWebAsset
 C:\!ASP\CTPapuci\obj\Debug\netcoreapp3.1\CTPapuci.dll
 C:\!ASP\CTPapuci\obj\Debug\netcoreapp3.1\CTPapuci.pdb
 C:\!ASP\CTPapuci\obj\Debug\netcoreapp3.1\CTPapuci.genruntimeconfig.cache
+C:\!ASP\CTPapuci\obj\Debug\netcoreapp3.1\scopedcss\bundle\CTPapuci.styles.css
